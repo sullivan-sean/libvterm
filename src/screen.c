@@ -525,7 +525,7 @@ static int resize(int new_rows, int new_cols, VTermPos *delta, void *user)
   if(new_cols > old_cols) {
     VTermRect rect = {
       .start_row = 0,
-      .end_row   = old_rows,
+      .end_row   = new_rows,
       .start_col = old_cols,
       .end_col   = new_cols,
     };
